@@ -86,7 +86,19 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium">lethabo.zwane@example.com</p>
+                    <a 
+                      href="mailto:lethabozwane04@gmail.com" 
+                      className="font-medium hover:text-primary transition-colors"
+                    >
+                      lethabozwane04@gmail.com
+                    </a>
+                    <br />
+                    <a 
+                      href="mailto:lethabo@mlandlsolutions.co.za" 
+                      className="font-medium hover:text-primary transition-colors"
+                    >
+                      lethabo@mlandlsolutions.co.za
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -95,7 +107,12 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Phone</p>
-                    <p className="font-medium">+27 XX XXX XXXX</p>
+                    <a 
+                      href="tel:+27632337775" 
+                      className="font-medium hover:text-primary transition-colors"
+                    >
+                      +27 63 233 7775
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -113,11 +130,21 @@ export const Contact = () => {
             <Card className="glass-effect p-6">
               <h3 className="text-xl font-bold mb-4">Connect on Social Media</h3>
               <div className="flex gap-4">
-                <Button size="lg" variant="outline" className="flex-1">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="flex-1"
+                  onClick={() => window.open('https://www.linkedin.com/in/lethabo-zwane-8296892b3/', '_blank')}
+                >
                   <Linkedin className="mr-2 h-5 w-5" />
                   LinkedIn
                 </Button>
-                <Button size="lg" variant="outline" className="flex-1">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="flex-1"
+                  onClick={() => window.open('https://github.com/Lzwane', '_blank')}
+                >
                   <Github className="mr-2 h-5 w-5" />
                   GitHub
                 </Button>

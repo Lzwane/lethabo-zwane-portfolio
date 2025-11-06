@@ -1,8 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Download, Github, Linkedin, Mail } from "lucide-react";
-import heroImage from "@/assets/hero-portrait.jpg";
+import Lethabo from "@/assets/Lethabo.jpg";
 
 export const Hero = () => {
+  const handleDownloadCV = () => {
+    // Add your CV download logic here
+    const link = document.createElement('a');
+    link.href = '/path-to-your-cv.pdf'; // Update with your actual CV path
+    link.download = 'Lethabo_Zwane_CV.pdf';
+    link.click();
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center pt-20 px-4">
       <div className="container mx-auto">
@@ -14,34 +22,59 @@ export const Hero = () => {
                 Lethabo <span className="gradient-text">Zwane</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground">
-                Deputy CTO • Student Leader • Tech Innovator
+                Tech Leader • Full-Stack Developer • AI Enthusiast
               </p>
             </div>
 
             <p className="text-lg text-muted-foreground max-w-xl">
-              BSc Mathematical Sciences student at Sefako Makgatho Health Sciences University, 
-              passionate about leveraging technology and leadership to drive innovation and social impact.
+              BSc Mathematical Sciences student and Deputy CTO with expertise in software development, 
+              team leadership, and innovative problem-solving. Passionate about creating impactful 
+              solutions through technology and driving digital transformation.
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="rounded-full">
+              <Button 
+                size="lg" 
+                className="rounded-full"
+                onClick={() => window.location.href = 'mailto:lethabozwane04@gmail.com'}
+              >
                 <Mail className="mr-2 h-5 w-5" />
                 Get in Touch
               </Button>
-              <Button size="lg" variant="outline" className="rounded-full">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="rounded-full"
+                onClick={handleDownloadCV}
+              >
                 <Download className="mr-2 h-5 w-5" />
                 Download CV
               </Button>
             </div>
 
             <div className="flex gap-4 pt-4">
-              <Button size="icon" variant="ghost" className="rounded-full hover:bg-primary/10">
+              <Button 
+                size="icon" 
+                variant="ghost" 
+                className="rounded-full hover:bg-primary/10"
+                onClick={() => window.open('https://www.linkedin.com/in/lethabo-zwane-8296892b3/', '_blank')}
+              >
                 <Linkedin className="h-5 w-5" />
               </Button>
-              <Button size="icon" variant="ghost" className="rounded-full hover:bg-primary/10">
+              <Button 
+                size="icon" 
+                variant="ghost" 
+                className="rounded-full hover:bg-primary/10"
+                onClick={() => window.open('https://github.com/Lzwane', '_blank')}
+              >
                 <Github className="h-5 w-5" />
               </Button>
-              <Button size="icon" variant="ghost" className="rounded-full hover:bg-primary/10">
+              <Button 
+                size="icon" 
+                variant="ghost" 
+                className="rounded-full hover:bg-primary/10"
+                onClick={() => window.location.href = 'mailto:lethabozwane04@gmail.com'}
+              >
                 <Mail className="h-5 w-5" />
               </Button>
             </div>
@@ -51,8 +84,8 @@ export const Hero = () => {
             <div className="relative w-full aspect-square max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-blue-500 rounded-3xl animate-glow"></div>
               <img
-                src={heroImage}
-                alt="Lethabo Zwane"
+                src={Lethabo}
+                alt="Lethabo Zwane - Tech Professional"
                 className="relative rounded-3xl w-full h-full object-cover border-4 border-background"
               />
             </div>
