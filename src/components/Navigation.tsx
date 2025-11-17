@@ -9,6 +9,7 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "Certificates", path: "/certificates" },
   { name: "Hackathons", path: "/hackathons" },
+  { name: "Projects", path: "/projects" }, 
 ];
 
 export const Navigation = () => {
@@ -41,7 +42,7 @@ export const Navigation = () => {
             ))}
             <ThemeToggle />
             <Button className="rounded-full">
-              <a href="#contact">Contact Me</a>
+              <a href="#contact">Contact Us</a>
             </Button>
           </div>
 
@@ -79,7 +80,7 @@ export const Navigation = () => {
             ))}
             <Button className="w-full mt-4 rounded-full">
               <a href="#contact" onClick={() => setIsOpen(false)}>
-                Contact Me
+                Contact Us
               </a>
             </Button>
           </div>

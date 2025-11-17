@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Download, Github, Linkedin, Mail } from "lucide-react";
 import Lethabo from "@/assets/Lethabo.jpg";
+import LethaboCV from "@/assets/Lethabo - CV.pdf"; 
 
 export const Hero = () => {
   const handleDownloadCV = () => {
-    // Add your CV download logic here
+    // UPDATED: Use the imported path for the CV document
     const link = document.createElement('a');
-    link.href = '/path-to-your-cv.pdf'; // Update with your actual CV path
+    link.href = LethaboCV; 
     link.download = 'Lethabo_Zwane_CV.pdf';
     link.click();
   };
