@@ -13,11 +13,21 @@ import {
   ExternalLink, 
   Code2,
   Activity,
-  Calendar
+  Calendar,
+  CloudRain
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const projects = [
+  {
+    title: "Proactive Flood Risk Intelligence",
+    description: "Built by Blue Horizon Hackers (BHH) for the G20 Hackathon, this live flood risk dashboard protects vulnerable communities. Using real-time satellite monitoring, IoT sensors, and AI-powered forecasts, the system tracks water levels and settlement expansion in high-risk areas like Quarry Road West in Durban. It empowers residents and responders with early warnings.",
+    technologies: ["Satellite Monitoring", "IoT Sensors", "AI Forecasts", "Python", "Real-time Data"],
+    category: "G20 Hackathon & Social Good",
+    link: "https://drive.google.com/file/d/10bNa2TazC_EFBncyvFKpHoCkS98H8U27/view?usp=drive_link", // Placeholder link
+    icon: CloudRain,
+    color: "text-blue-600",
+  },
   {
     title: "Hypertension Manager App",
     description: "A comprehensive, local-first mobile application designed for effective hypertension management. It features vital sign tracking (BP, sodium, steps), a digital pillbox with reminders, a GPS pharmacy locator, and an empathetic AI health assistant for immediate guidance. Includes emergency protocols and doctor reporting capabilities.",

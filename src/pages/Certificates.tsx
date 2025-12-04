@@ -20,7 +20,7 @@ interface Certificate {
   type: string;
   description: string;
   format: "image" | "pdf";
-  assetUrl: string; // This would be the path to your actual file
+  assetUrl: string; // Placeholder path to be updated with actual filename
 }
 
 const certificatesData: Certificate[] = [
@@ -33,7 +33,7 @@ const certificatesData: Certificate[] = [
     type: "Technical Skill",
     description: "Verified competency in Cascading Style Sheets (CSS).",
     format: "image",
-    assetUrl: "/placeholder.svg", // Replace with actual image path
+    assetUrl: "/src/assets/HackerRank - CSS.jpg", // Update this filename
   },
   {
     id: 2,
@@ -43,27 +43,27 @@ const certificatesData: Certificate[] = [
     type: "Course",
     description: "Foundational understanding of machine learning concepts and applications.",
     format: "image",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/Machine Learning 101 Demystifying the magic.jpg", // Update this filename
   },
   {
     id: 3,
     title: "Basics of Network Layer Protocols Micro Certification",
     issuer: "Huawei",
-    date: "2025",
+    date: "2024",
     type: "Micro Certification",
     description: "Understanding of core network layer protocols and infrastructure.",
     format: "image",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/Huawei - Basics of Network Layer Protocols Micro Certification.png", // Update this filename
   },
   {
     id: 4,
     title: "AI Fluency Course",
     issuer: "Microsoft",
-    date: "2025",
+    date: "2024",
     type: "Course",
     description: "Comprehensive overview of Artificial Intelligence concepts and Microsoft AI tools.",
     format: "image",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/Microsoft - AI Fluency Course.png", // Update this filename
   },
   {
     id: 5,
@@ -73,7 +73,7 @@ const certificatesData: Certificate[] = [
     type: "Hackathon/Competition",
     description: "Participation in a global data science and mainframe challenge.",
     format: "image",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/IBM Z - Datathon 2024.jpg", // Update this filename
   },
   {
     id: 6,
@@ -83,7 +83,7 @@ const certificatesData: Certificate[] = [
     type: "Course",
     description: "Techniques for effective data visualization and storytelling.",
     format: "image",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/Visualizing data Creating impactful graphs and charts.jpg", // Update this filename
   },
   {
     id: 7,
@@ -93,7 +93,7 @@ const certificatesData: Certificate[] = [
     type: "Badge",
     description: "Recognition of Python programming proficiency on the Kaggle platform.",
     format: "image",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/Kaggle - Python Coder badge.jpg", // Update this filename
   },
 
   // --- Group 2: Pop ups from single page PDF ---
@@ -105,7 +105,7 @@ const certificatesData: Certificate[] = [
     type: "Course",
     description: "Fundamental training on Microsoft technologies and ecosystem.",
     format: "pdf",
-    assetUrl: "/placeholder.svg", // Replace with path to PDF
+    assetUrl: "/src/assets/Microsoft 101.pdf", // Update this filename
   },
   {
     id: 9,
@@ -115,7 +115,7 @@ const certificatesData: Certificate[] = [
     type: "Professional Certificate",
     description: "Core concepts and applications of Generative AI in the professional workplace.",
     format: "pdf",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/Career Essentials in Generative AI.pdf", // Update this filename
   },
   {
     id: 10,
@@ -125,7 +125,7 @@ const certificatesData: Certificate[] = [
     type: "Professional Certificate",
     description: "Essentials of digital security, threat protection, and compliance.",
     format: "pdf",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/Career Essentials in Cybersecurity by Microsoft.pdf", // Update this filename
   },
   {
     id: 11,
@@ -135,7 +135,7 @@ const certificatesData: Certificate[] = [
     type: "Course",
     description: "Building confidence and essential skills for the digital world.",
     format: "pdf",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/Microsoft Digital Literacy.pdf", // Update this filename
   },
   {
     id: 12,
@@ -145,7 +145,7 @@ const certificatesData: Certificate[] = [
     type: "Course",
     description: "Advanced understanding of AI principles and implementation.",
     format: "pdf",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/NETCAMPUS - Microsoft AI Fluency Course.pdf", // Update this filename
   },
   {
     id: 13,
@@ -155,7 +155,7 @@ const certificatesData: Certificate[] = [
     type: "Bootcamp",
     description: "Intensive training in modern web development stacks and software engineering.",
     format: "pdf",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/FNB APP ACADEMY - Full Stack Development Certification 687D1AFFB9A0C.pdf", // Update this filename
   },
   {
     id: 14,
@@ -165,7 +165,7 @@ const certificatesData: Certificate[] = [
     type: "Workshop",
     description: "Specialized training in data science and analytics for research.",
     format: "pdf",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/DIRISA - Datathon training certificate 2025.pdf", // Update this filename
   },
   {
     id: 15,
@@ -175,27 +175,27 @@ const certificatesData: Certificate[] = [
     type: "Hackathon",
     description: "Development of business solutions using the ayoba messaging API.",
     format: "pdf",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/ayoba Business Chat API Hackathon.pdf", // Update this filename
   },
   {
     id: 16,
     title: "Generative AI with AWS",
     issuer: "AWS Udacity",
-    date: "2025",
+    date: "2024",
     type: "Course",
     description: "Building and scaling generative AI applications using AWS services.",
     format: "pdf",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/Generative AI with AWS.pdf", // Update this filename
   },
   {
     id: 17,
     title: "GenAI for Software Engineers course",
     issuer: "We Think Code",
-    date: "2025",
+    date: "2024",
     type: "Bootcamp",
     description: "Applying generative AI tools to accelerate software development workflows.",
     format: "pdf",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/We Think Code - GenAI for Software Engineers course.pdf", // Update this filename
   },
   {
     id: 18,
@@ -205,7 +205,7 @@ const certificatesData: Certificate[] = [
     type: "Course",
     description: "Foundational programming concepts using the Python language.",
     format: "pdf",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/ChiSquares - Introduction to Programming in python.pdf", // Update this filename
   },
   {
     id: 19,
@@ -215,7 +215,7 @@ const certificatesData: Certificate[] = [
     type: "Course",
     description: "Statistical analysis and data visualization using R.",
     format: "pdf",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/ChiSquares - Data Science with R.pdf", // Update this filename
   },
   {
     id: 20,
@@ -225,8 +225,19 @@ const certificatesData: Certificate[] = [
     type: "Specialization",
     description: "Advanced methodologies for health data analysis and study design.",
     format: "pdf",
-    assetUrl: "/placeholder.svg",
+    assetUrl: "/src/assets/C00340.pdf", // Update this filename
   },
+  {
+    id: 21,
+    title: "Introduction to the Digital Earth Africa Sandbox",
+    issuer: "Digital Earth Africa",
+    date: "2024",
+    type: "Course",
+    description: "Learned to select, load, and analyse Earth observation satellite data of Africa using the Sandbox platform. Covered Python basics for geospatial analysis, inspecting regions at scale, and conducting quantitative remote sensing.",
+    format: "pdf",
+    assetUrl: "/src/assets/Digital Earth Africa.pdf", // Update this filename
+  },
+
 ];
 
 export default function Certificates() {
