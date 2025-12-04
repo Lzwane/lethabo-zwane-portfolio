@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Download, Github, Linkedin, Mail } from "lucide-react";
 import Lethabo from "@/assets/Lethabo.jpg";
-import LethaboCV from "@/assets/Lethabo - CV.pdf"; 
+import LethaboCV from "@/assets/Lethabo Zwane - CV.pdf"; 
 
 export const Hero = () => {
   const handleDownloadCV = () => {

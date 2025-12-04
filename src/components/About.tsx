@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap, Briefcase, Award, Users } from "lucide-react";
 
 const stats = [
-  { icon: GraduationCap, value: "21+", label: "Certificates" },
+  { icon: GraduationCap, value: "20+", label: "Certificates" },
   { icon: Award, value: "3", label: "Badges" },
   { icon: Briefcase, value: "2", label: "Internships" },
   { icon: Users, value: "5+", label: "Leadership Roles" },

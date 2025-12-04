@@ -1,10 +1,41 @@
 import { Navigation } from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Lightbulb, Building2, Zap, ScanLine, HeartPulse, MessageSquare, Landmark, ExternalLink, Code2 } from "lucide-react";
+import { 
+  Users, 
+  Lightbulb, 
+  Building2, 
+  Zap, 
+  ScanLine, 
+  HeartPulse, 
+  MessageSquare, 
+  Landmark, 
+  ExternalLink, 
+  Code2,
+  Activity,
+  Calendar
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const projects = [
+  {
+    title: "Hypertension Manager App",
+    description: "A comprehensive, local-first mobile application designed for effective hypertension management. It features vital sign tracking (BP, sodium, steps), a digital pillbox with reminders, a GPS pharmacy locator, and an empathetic AI health assistant for immediate guidance. Includes emergency protocols and doctor reporting capabilities.",
+    technologies: ["React Native", "Expo", "TypeScript", "AsyncStorage", "AI Integration"],
+    category: "Mobile Health & Utility",
+    link: "https://github.com/Lzwane/HypertensionApp.git",
+    icon: Activity,
+    color: "text-red-600",
+  },
+  {
+    title: "Public Clinic Booking System",
+    description: "A patient appointment scheduling system specifically designed for public clinics to eliminate long waiting lines. This solution allows patients from public places to book appointments remotely, streamlining patient flow and improving the efficiency of healthcare service delivery in high-volume environments.",
+    technologies: ["React", "Node.js", "Web Architecture", "Healthcare IT"],
+    category: "Healthcare Management",
+    link: "https://github.com/alkamal-lisaqtari/Booking-System.git",
+    icon: Calendar,
+    color: "text-teal-500",
+  },
   {
     title: "Ubuntu RecruitFlow (AI Recruitment Assistant)",
     description: "An AI-powered recruitment assistant designed to streamline and simplify hiring. It helps recruiters generate optimized job descriptions, matches candidates intelligently to roles, and supports inclusive, mobile-first job applications — all tailored for the South African context. 🧠 Fair hiring, faster.",
